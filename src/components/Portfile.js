@@ -1,7 +1,7 @@
 import React, {   useEffect, useState } from 'react'
 import { getDatabase, onValue, push, query, ref, set } from 'firebase/database';
 import Cards from './Cards';
-import app from '../utils/firebase';
+import app from '../helpers/firebase';
 import { Button, Form,  Input,  TextArea, TransitionablePortal } from 'semantic-ui-react';
 
 
@@ -28,6 +28,7 @@ export const useFetch=()=>{
     },[]);
     return {isLoading,contactList};
 }
+console.log(app)
 
 
 
